@@ -15,7 +15,7 @@
     from pyodide.http import open_url
     import json
     user = json.load(open_url("https://jsonplaceholder.typicode.com/users/2"))
-    print(user.status)
+    print(user)
   </py-script>
   <iframe src="https://jsonplaceholder.typicode.com/users/2"></iframe>
  

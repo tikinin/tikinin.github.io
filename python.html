@@ -12,11 +12,15 @@
     
   </py-env>
   <py-script>print("Hello, World!")</py-script>
-  <py-scritpt>print(4+4)</py-script>
-  <py-script>input('Name: ')</py-script>
   <py-script>
- import os
-     print(os.name)
+ import urllib3
+
+http = urllib3.PoolManager()
+
+url = 'http://webcode.me'
+
+resp = http.request('GET', url)
+print(resp.status)
     
   </py-script>
 </body>
